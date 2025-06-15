@@ -1,0 +1,124 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  background-image: url('/img/cenarioanimado.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  color: var(--cor-texto-principal, #f8f9fa);
+}
+
+.animationViewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end; 
+}
+
+.heroContent {
+  position: relative; 
+  bottom: -20px;
+  border-radius: 50%; 
+  width: 300px; 
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pushBall 13s linear infinite; 
+}
+
+.heroContent img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes pushBall {
+  0% {
+    transform: translateX(calc(-100% - 100vw)) rotate(0deg);
+  }
+  100% {
+    transform: translateX(calc(100% + 100vw)) rotate(720deg);
+  }
+}
+.mario {
+  position: absolute;
+  bottom: 0%; 
+  width: 150px; 
+  height: 150px; 
+  animation: marioFollow 13s linear  infinite, 
+             walkAnimation 1s steps(8) infinite;
+}
+@keyframes marioFollow {
+  0% {
+    transform: translateX(calc(-100% - 100vw - 150px)); 
+  }
+  100% {
+    transform: translateX(calc(100% + 100vw - 150px)); 
+  }
+}
+
+@keyframes walkAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: -800px 0; } 
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--cor-texto-principal);
+  z-index: 4; 
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.boxsociais {
+  position: absolute;
+  top: 100px;
+  right: 540px;
+  font-size: 0.8rem;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .heroContent {
+    width: 200px;
+    height: 200px;
+  }
+  .heroContent img {
+    width: 100%;
+    height: 100%;
+  }
+  .mario {
+    width: 100px;
+    height: 100px;
+  }
+  .heroText h1 {
+    font-size: 2em;
+  }
+  .heroText p {
+    font-size: 1em;
+  }
+
+  @keyframes marioFollow {
+      0% {
+          transform: translateX(calc(-100% - 100vw - 100px));
+      }
+      100% {
+          transform: translateX(calc(100% + 100vw - 100px));
+      }
+  }
+}

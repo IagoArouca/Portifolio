@@ -1,0 +1,195 @@
+.contact {
+  padding: 6rem 2rem;
+  text-align: center;
+  background-image: url('/img/Saidacorreta.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact h2 {
+  display: inline-block;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  background: var(--gradiente-primario);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: flex-start;
+  margin: 2rem auto;
+  padding: 2rem; 
+  max-width: 960px;  
+  border-radius: 8px;
+}
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem; 
+  flex: 1; 
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: transparent; 
+  height: auto; 
+}
+
+.contactFormContainer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--cor-texto-principal);
+  text-align: left;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-grow: 1; 
+}
+
+.contactForm input {
+  padding: 0.9rem 0.7rem; 
+  border: 1px solid var(--cor-texto-secundario);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background-color: var(--cor-fundo-cards);
+  color: var(--cor-texto-principal);
+  min-height: 40px; 
+}
+.contactForm textarea {
+  padding: 0.7rem;
+  border: 1px solid var(--cor-texto-secundario);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background-color: var(--cor-fundo-cards);
+  color: var(--cor-texto-principal);
+  height: 130px; 
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: rgba(var(--cor-texto-secundario-rgb), 0.7); 
+}
+
+.contactForm button {
+  width: max-content; 
+  display: inline-block; 
+  color: black; 
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem; 
+  border: 1px solid var(--cor-secundaria); 
+  font-weight: normal; 
+  margin-top: 1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.contactOptions {
+  display: flex;
+  flex-direction: column; 
+  gap: 1.5rem; 
+  margin-top: 0;
+  width: 25%; 
+}
+
+.contactOption {
+  background-color: var(--cor-fundo-cards); 
+  padding: 0.8rem; 
+  border-radius: 1rem; 
+  text-align: center;
+  border: 1px solid transparent;
+  line-height: 1.0rem;
+  width: 230px;
+}
+
+.contactOption:first-child {
+  margin-top: 22px; 
+}
+
+.contactOption i {
+  font-size: 1.5rem; 
+  color: var(--cor-secundaria); 
+}
+
+.contactOption h4 {
+  color: var(--cor-texto-principal);
+  margin: 10px 0px 0px 0px;
+  font-size: 1rem; 
+}
+
+.contactOption h5 a {
+  color: var(--cor-texto-secundario);
+  text-decoration: none;
+  font-size: 0.8rem; 
+}
+
+.contactOption h5 a:hover {
+  text-decoration: underline;
+  color: var(--cor-destaque-hover);
+}
+
+.contactOption .btn-primary {
+  display: inline-block;
+  padding: 0.4rem 0.8rem; 
+  margin-top: 0.5rem; 
+  background-color: transparent;
+  color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 0.4rem;  
+  text-decoration: none;
+  font-size: 0.8rem; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contactOption .btn-primary:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
+
+
+@media (min-width: 769px) {
+  .contactWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+  }
+
+  .contactOptions {
+    flex-direction: column;
+    width: 25%; 
+    margin-top: 0;
+    gap: 1rem; 
+  }
+
+  .contactFormContainer {
+    width: 70%; 
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactWrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .contactFormContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .contactOptions {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

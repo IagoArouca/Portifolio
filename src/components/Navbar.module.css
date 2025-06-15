@@ -1,0 +1,60 @@
+/* src/components/Navbar.module.css */
+.navbar {
+  background: #0000004d; /* Preto semi-transparente (ajuste a opacidade) */
+  width: max-content; /* Largura máxima do conteúdo */
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2; /* Garante que fique acima de outros elementos */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  border-radius: 3rem;
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+}
+
+.navbarLogo {
+  display: none; /* Ocultando o logo por enquanto */
+}
+
+.navbarLinks ul {
+  display: flex;
+  gap: 0.8rem;
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0;
+  margin: 0;
+}
+
+.navbarLinks ul li {
+  margin: 0; /* Remove a margem padrão dos itens da lista */
+}
+
+.navbarLinks ul li a {
+  background: transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.8rem;
+  color: var(--cor-texto-principal); /* Use sua variável de cor branca */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1rem; /* Mantendo o tamanho da fonte */
+}
+
+.navbarLinks ul li a:hover {
+  background: var(--cor-secundaria); /* Use sua variável de cor secundária para o hover */
+  color: var(--cor-primaria); /* Cor do texto no hover, se desejar */
+  transform: translateY(-2px); /* Mantendo o efeito de levantar no hover */
+}
+
+/* Estilos para telas menores (opcional) */
+@media screen and (max-width: 600px) {
+  .navbar {
+    bottom: 1rem;
+  }
+
+  .navbarLinks ul li a {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
