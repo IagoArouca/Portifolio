@@ -13,7 +13,7 @@ function Contact() {
     setStatus('Enviando...'); 
 
     try {
-      const response = await fetch('https://portifoliobackend-i5s0.onrender.com', { 
+      const response = await fetch('https://portifoliobackend-i5s0.onrender.com/api/contato', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
