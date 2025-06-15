@@ -1,12 +1,39 @@
-# React + Vite
+# Portfólio de Iago Arouca
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao meu portfólio pessoal! Este projeto é uma vitrine das minhas habilidades em desenvolvimento web e software, apresentando meus trabalhos, serviços e uma forma fácil de entrar em contato comigo.
 
-Currently, two official plugins are available:
+## 🚀 Demo Online
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Explore meu portfólio ao vivo aqui: [https://portifolio-pied-omega-33.vercel.app/]
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Página Inicial:** 
+* **Sobre Mim:** 
+* **Serviços:** 
+* **Projetos:** 
+* **Contato:** 
+* **Responsividade:** 
+* **Animações e Efeitos Visuais:** 
+
+## 🛠️ Tecnologias Utilizadas
+
+
+
+### Frontend
+
+* **ReactJS:** 
+* **Vite:** 
+* **HTML5:** 
+* **CSS3 (com CSS Modules):** 
+* **JavaScript (ES6+):** 
+* **React Icons:** 
+
+### Backend (API de Contato)
+
+* **Node.js:** 
+* **Express.js:** 
+* **Nodemailer:** 
+* **Dotenv:**
+* **CORS:** 
+
