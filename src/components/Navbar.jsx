@@ -1,11 +1,10 @@
 import React from 'react';
-import styles from './Navbar.module.css'; // Importamos os estilos específicos para o Navbar
+import styles from './Navbar.module.css'; 
 
 function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarLogo}>
-        {/* Aqui você pode colocar seu nome ou um logo */}
         Seu Nome
       </div>
       <div className={styles.navbarLinks}>
