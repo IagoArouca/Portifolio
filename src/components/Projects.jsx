@@ -11,7 +11,7 @@ const Projetos = () => {
           <div className={styles.projetoimg}>
             <img src="/img/logo-wear.png" alt="" />
           </div>
-          <p>E-commerce de produtos digitais, com funcionalidades robustas,Carrinho de Compras,Autenticação de Usuário e muito mais, confira !.</p>
+          <p>E-commerce de produtos digitais, com funcionalidades robustas,Carrinho de Compras,e  muito mais, confira !.</p>
          
           <div className={styles.projetoLinks}>
             <a href="https://e-commerce-produtos-digitais.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
