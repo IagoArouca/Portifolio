@@ -6,6 +6,18 @@ const Projetos = () => {
     <section id="projects" className={styles.projects}>
       <h2>Meus Projetos</h2>
       <div className={styles.projectsGrid}>
+
+        <article className={styles.projectCard}>
+          <div className={styles.projetoimg}>
+            <img src="/img/logo-wear.png" alt="" />
+          </div>
+          <p>E-commerce de produtos digitais.</p>
+         
+          <div className={styles.projetoLinks}>
+            <a href="https://e-commerce-produtos-digitais.vercel.app/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
         <article className={styles.projectCard}>
           <div className={styles.projetoimg}>
             <img src="/img/imagemprojeto1.jpeg" alt="" />
