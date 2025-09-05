@@ -35,7 +35,7 @@ const Projetos = () => {
           </div>
           <p>Um aplicativo de gerenciamento de tarefas, construído com foco em organização visual e usabilidade..</p>
           <div className={styles.projetoLinks}>
-            <a href="https://github.com/IagoArouca/T0-do-List.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://t0-do-list-dun.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">Demo</a>
           </div>
         </article>
       </div>            
