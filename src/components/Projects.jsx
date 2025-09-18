@@ -38,6 +38,17 @@ const Projetos = () => {
             <a href="https://t0-do-list-dun.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a>
           </div>
         </article>
+
+        <article className={styles.projectCard}>
+          <div className={styles.projetoimg}>
+            <img src="/img/cifrao.jpg" alt="" />
+          </div>
+          <p>Gerenciador de Finanças Pessoais completo, focado em ajudar a controlar receitas e despesas de forma intuitiva.!.</p>
+         
+          <div className={styles.projetoLinks}>
+            <a href="https://controle-financeiro-vert-three.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+          </div>
+        </article>
       </div>            
     </section>
   );
