@@ -20,6 +20,30 @@ const Projetos = () => {
 
         <article className={styles.projectCard}>
           <div className={styles.projetoimg}>
+            <img src="/img/Focototal.png" alt="" />
+          </div>
+          <p>Participei de um Projeto em equipe no programa desenvolve do grupo Boticario, onde o desafio era construir um Módulo de 
+            Agendamento e Gestão de Tarefas (MVP) para uma nova plataforma de produtividade, a 
+            "Foco Total".</p>
+         
+          <div className={styles.projetoLinks}>
+            <a href="https://foco-total-lake.vercel.app/login" target="_blank" rel="noopener noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article className={styles.projectCard}>
+          <div className={styles.projetoimg}>
+            <img src="/img/Docker.png" alt="" />
+          </div>
+          <p>Este projeto demonstra a criação e configuração automatizada de um cluster Docker Swarm utilizando Vagrant e VirtualBox. O cluster é composto por um nó manager e múltiplos nós worker, todos rodando Ubuntu Server 20.04 (Focal Fossa).</p>
+         
+          <div className={styles.projetoLinks}>
+            <a href="https://github.com/IagoArouca/Cluster-Docker-Swarm" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article className={styles.projectCard}>
+          <div className={styles.projetoimg}>
             <img src="/img/imagemprojeto1.jpeg" alt="" />
           </div>
           <p>Este é um sistema completo de login, cadastro e painel de usuário protegido com autenticação JWT,.</p>
