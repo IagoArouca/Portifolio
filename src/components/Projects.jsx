@@ -35,7 +35,7 @@ const Projetos = () => {
           <div className={styles.projetoimg}>
             <img src="/img/Docker.png" alt="" />
           </div>
-          <p>Este projeto demonstra a criação e configuração automatizada de um cluster Docker Swarm utilizando Vagrant e VirtualBox. O cluster é composto por um nó manager e múltiplos nós worker, todos rodando Ubuntu Server 20.04 (Focal Fossa).</p>
+          <p>Este projeto demonstra a criação e configuração automatizada de um cluster Docker Swarm utilizando Vagrant e VirtualBox..</p>
          
           <div className={styles.projetoLinks}>
             <a href="https://github.com/IagoArouca/Cluster-Docker-Swarm" target="_blank" rel="noopener noreferrer">GitHub</a>
