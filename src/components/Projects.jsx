@@ -33,6 +33,17 @@ const Projetos = () => {
 
         <article className={styles.projectCard}>
           <div className={styles.projetoimg}>
+            <img src="/img/stock.png" alt="" />
+          </div>
+          <p>Projeto Full Stack de Gestão de Estoque (InventoryPro), desenvolvido para simular um ambiente de controle de inventário moderno e escalável.</p>
+         
+          <div className={styles.projetoLinks}>
+            <a href="https://github.com/IagoArouca/EstoqueDeProdutos" target="_blank" rel="noopener noreferrer">Github</a>
+          </div>
+        </article>
+
+        <article className={styles.projectCard}>
+          <div className={styles.projetoimg}>
             <img src="/img/Docker.png" alt="" />
           </div>
           <p>Este projeto demonstra a criação e configuração automatizada de um cluster Docker Swarm utilizando Vagrant e VirtualBox..</p>
